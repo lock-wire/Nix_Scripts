@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #This Script configure iptables
-#created by Ruben Lemus
+#created by R. Lemus and shared
 
 iptables -F
 iptables -X
