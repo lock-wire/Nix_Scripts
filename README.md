@@ -1,2 +1,2 @@
-# alumi-scripts
-scripts for home use
+# Nix_scripts
+Bash scripts for home use
