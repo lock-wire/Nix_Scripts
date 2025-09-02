@@ -1,0 +1,17 @@
+[Unit]
+Description=Tcpdump service
+After=network.target
+
+[Service]
+Type=simple
+User=root 
+ExecStart=/usr/local/etc/capture_traffic.sh
+WorkingDirectory=/pcap
+Restart=on-failure
+RestartSec=30
+TimeoutStartSec=60
+TimeoutStopSec=30
+ExecStop=/bin/kill -s QUIT $MAINPID
+
+[Install]
+WantedBy=multi-user.target

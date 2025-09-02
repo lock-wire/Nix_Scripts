@@ -1,2 +1,2 @@
 # Nix_scripts
-Bash scripts for home use
+Variety of linux scripts

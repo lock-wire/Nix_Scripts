@@ -1,0 +1,3 @@
+# capture_variables.txt
+export SRC_DIR="/pcap/tcpdump"
+export DEST_DIR="/pcap/teleseer"
