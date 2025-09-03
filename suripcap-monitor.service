@@ -1,0 +1,17 @@
+[Unit]
+Description=suripcap-monitor service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+EnvironmentFile=/usr/local/etc/suripcap-monitor.conf
+ExecStart=/usr/local/etc//suripcap-monitor.sh ${suripcap} ${symdest}
+Restart=on-failure
+RestartSec=30
+TimeoutStartSec=60
+TimeoutStopSec=30
+ExecStop=/bin/kill -s QUIT $MAINPID
+
+[Install]
+WantedBy=multi-user.target
